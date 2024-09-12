@@ -1,21 +1,18 @@
-/* eslint-disable no-unused-vars */
 import React from "react";
-import './navigation.css'; // Import the CSS file for styling
-
-function Navigation() {
-  return (
-    <nav className="nav">
-      <div className="nav-links">
-        <span><a href="#home">Home</a></span>
+function Navigation(props)//passing the data forom one component to another component 
+{
+return(
+    <nav className='nav'>
+        <span><a href="#home">{props.title}</a></span>
         <span><a href="#about">About Us</a></span>
-        <span><a href="#services">Services</a></span>
-      </div>
-      <div className="nav-search">
-        <input type="search" placeholder="Search here" />
-        <button>Go</button>
-      </div>
+        <span><a href="#contact">Contact</a></span>
+        <span><a href="#service">Service</a></span>
+        <div className="search-bar">
+            <input type="search" placeholder="search here"/>
+               < button>Go</button>
+            </div>
     </nav>
-  );
-}
-
+)
+};
+Navigation.defaultProps={title:"react"}
 export default Navigation;
