@@ -1,17 +1,23 @@
-//    import logo from './logo.svg';
+
 import './App.css';
 import React from 'react';
-// import Navigation from './navigation';
-import Table from './table';
-//  import Paragraph from './paragraph';
+
+// import Hero from './hero';
+// import NavBar from './navigation';
+// import Counter from './counter';
+// import Hook from './hook';
+import UserForm from './userform';
+
 
 
 
 function App() {
   return (
-        // <Navigation/>
-        <Table/>
-    // <Paragraph/>
+        <>
+        {/* <NavBar/>
+        <Hero/> */}
+        <UserForm/>
+        </>
   );
 }
 

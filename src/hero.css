@@ -1,0 +1,39 @@
+.hello {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    background-image: url('./bg.jpeg');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+}
+
+
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #ff5733;
+}
+
+
+p {
+    max-width: 600px; 
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    color:white;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

@@ -1,40 +1,58 @@
-// src/NavBar.js
-import React, { useState } from 'react';
-import './navigation.css'; // Import CSS for styling
+/* eslint-disable jsx-a11y/anchor-is-valid */
+
+import React from 'react';
+
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+
+
 
 const NavBar = () => {
-    const [searchTerm, setSearchTerm] = useState('');
-
-    const handleSearchChange = (e) => {
-        setSearchTerm(e.target.value);
-    };
-
-    const handleSearchSubmit = (e) => {
-        e.preventDefault();
-        console.log('Search submitted:', searchTerm);
-        // Add logic to handle search submission here
-    };
-
     return (
-        <nav className="navbar">
-            <div className="navbar-logo">
-                <a href="/">Logo</a>
-            </div>
-            <ul className="navbar-menu">
-                <li><a href="/">Home</a></li>
-                <li><a href="/about">About</a></li>
-                <li><a href="/contact">Contact</a></li>
+        <>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">EndGame</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Home
+                </a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Games
+                </a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Reviews
+                </a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  News
+                </a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Contact
+                </a>
+              </li>
+              
             </ul>
-            <form className="navbar-search" onSubmit={handleSearchSubmit}>
-                <input
-                    type="text"
-                    value={searchTerm}
-                    onChange={handleSearchChange}
-                    placeholder="Search..."
-                />
-                <button type="submit">Search</button>
-            </form>
-        </nav>
+            
+              <a class="navbar-brand" href="#">Login/Register</a>
+            
+          </div>
+        </div>
+      </nav>
+      </>
     );
 };
 
