@@ -12,7 +12,7 @@ function UserForm() {
 
   const handleAgeChange = (event) => {
     const value = Number(event.target.value);
-    setAge(value >= 0 ? value : 0); 
+    setAge(value); 
   };
 
   const handleSubmit = (event) => {
