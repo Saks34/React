@@ -1,8 +1,12 @@
-import React,{useState} from "react";
+import React,{useEffect, useState} from "react";
 
 const Hook=()=>{
     const [count,setCount] = useState(200);
 
+     useEffect(()=>{
+        console.log(`you clicked ${count} times`);
+    },[count]);
+    
     const Increment =()=>{
         setCount(count+1);
     } 

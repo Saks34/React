@@ -6,7 +6,7 @@ import React from 'react';
 // import NavBar from './navigation';
 // import Counter from './counter';
 // import Hook from './hook';
-import UserForm from './userform';
+import RenderCounter from './rendercount';
 
 
 
@@ -16,7 +16,7 @@ function App() {
         <>
         {/* <NavBar/>
         <Hero/> */}
-        <UserForm/>
+        <RenderCounter/>
         </>
   );
 }
