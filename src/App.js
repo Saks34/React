@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 
 import './App.css';
 import React from 'react';
@@ -6,7 +7,8 @@ import React from 'react';
 // import NavBar from './navigation';
 // import Counter from './counter';
 // import Hook from './hook';
-import RenderCounter from './rendercount';
+// import RenderCounter from './useRefz';
+import ColorChangeInput from './inputbutton';
 
 
 
@@ -16,7 +18,7 @@ function App() {
         <>
         {/* <NavBar/>
         <Hero/> */}
-        <RenderCounter/>
+        <ColorChangeInput/>
         </>
   );
 }
