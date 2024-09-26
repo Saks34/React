@@ -5,7 +5,7 @@ const RenderCounter = () => {
   const count = useRef(0);
 
   useEffect(() => {
-  count.current=count.current+1;  
+  count.current+=1;  
 });
 
   return (

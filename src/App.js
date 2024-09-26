@@ -7,8 +7,8 @@ import React from 'react';
 // import NavBar from './navigation';
 // import Counter from './counter';
 // import Hook from './hook';
-// import RenderCounter from './useRefz';
-import ColorChangeInput from './inputbutton';
+import RenderCounter from './useRefz';
+// import ColorChangeInput from './inputbutton';
 
 
 
@@ -18,7 +18,7 @@ function App() {
         <>
         {/* <NavBar/>
         <Hero/> */}
-        <ColorChangeInput/>
+        <RenderCounter/>
         </>
   );
 }
