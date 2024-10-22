@@ -3,7 +3,7 @@
 import { render } from "@testing-library/react";
 import React,{Component} from "react";
 
-class Counter extends Component{
+class Count extends Component{
     constructor(props){
         super(props);
         this.state={
@@ -35,4 +35,4 @@ render() {
 }
 }
 
-export default Counter;
+export default Count;

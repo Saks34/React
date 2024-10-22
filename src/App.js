@@ -1,26 +1,17 @@
-/* eslint-disable no-unused-vars */
+// import React from 'react';
+// import ParentComponent from './ParentComponent';
+// import UseReducer from './UseReducer';
+// import Parent from './UseCallback';
+// import Calculator from './usememo';
+// import Parent from './UseCallback';
+import Counter from './CounterCompoenent';
 
-import './App.css';
-import React from 'react';
-
-// import Hero from './hero';
-// import NavBar from './navigation';
-// import Counter from './counter';
-// import Hook from './hook';
-import RenderCounter from './useRefz';
-// import ColorChangeInput from './inputbutton';
-
-
-
-
-function App() {
+const App = () => {
   return (
-        <>
-        {/* <NavBar/>
-        <Hero/> */}
-        <RenderCounter/>
-        </>
+    <div>
+      <Counter/>
+    </div>
   );
-}
+};
 
 export default App;
