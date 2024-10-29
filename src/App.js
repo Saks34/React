@@ -10,12 +10,14 @@
 // import Addition from "./hello";
 // import Stories from "./Child";
 // import Auth from "./login";
-import Get from "./hi";
+// import DeletePost from "./delete";
+// import Post from "./post";
+import UserDetailsFetcher from "./activity10";
 
 const App = () => {
   return (
     <div>
-      <Get/>
+      <UserDetailsFetcher/>
     </div>
   );
 };
