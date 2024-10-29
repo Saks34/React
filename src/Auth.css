@@ -1,11 +1,12 @@
 .auth-container {
   width: 300px;
-  margin: auto;
+  margin: 50px auto;
   padding: 20px;
   text-align: center;
   border: 1px solid #ccc;
   border-radius: 10px;
   background-color: #f9f9f9;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .auth-buttons {
@@ -18,15 +19,19 @@
   width: 45%;
   padding: 10px;
   cursor: pointer;
-  background-color: #f0f0f0;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
   border: none;
   border-radius: 5px;
+  color: white;
   transition: 0.3s;
 }
 
+.auth-buttons button:hover {
+  background: linear-gradient(135deg, #2575fc, #6a11cb);
+}
+
 .auth-buttons .active {
-  background-color: #007bff;
-  color: white;
+  background: linear-gradient(135deg, #ff7e5f, #feb47b);
 }
 
 .auth-form div {
@@ -37,12 +42,21 @@
   display: block;
   margin-bottom: 5px;
   font-weight: bold;
+  color: #333;
 }
 
 .auth-form input {
   width: 100%;
   padding: 8px;
   box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.auth-form input:focus {
+  border-color: #6a11cb;
 }
 
 .auth-form a {
@@ -50,24 +64,39 @@
   margin-bottom: 15px;
   color: #007bff;
   text-decoration: none;
+  font-size: 14px;
+}
+
+.auth-form a:hover {
+  text-decoration: underline;
 }
 
 .auth-form button {
   width: 100%;
   padding: 10px;
-  background-color: #007bff;
+  background: linear-gradient(135deg, #f2994a, #f2c94c);
   color: white;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  transition: background 0.3s;
+}
+
+.auth-form button:hover {
+  background: linear-gradient(135deg, #f2c94c, #f2994a);
 }
 
 .auth-form p {
   margin-top: 20px;
+  font-size: 14px;
 }
 
 .auth-form .toggle-signup {
   color: #007bff;
   cursor: pointer;
   text-decoration: underline;
+}
+
+.auth-form .toggle-signup:hover {
+  color: #0056b3;
 }

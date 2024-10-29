@@ -9,12 +9,13 @@
 // import RegistrationForm from "./form";
 // import Addition from "./hello";
 // import Stories from "./Child";
-import Auth from "./login";
+// import Auth from "./login";
+import Get from "./hi";
 
 const App = () => {
   return (
     <div>
-      <Auth/>
+      <Get/>
     </div>
   );
 };
