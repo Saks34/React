@@ -12,12 +12,14 @@
 // import Auth from "./login";
 // import DeletePost from "./delete";
 // import Post from "./post";
-import UserDetailsFetcher from "./activity10";
+// import UserDetailsFetcher from "./activity10";
+// import NavBar from "./NavBar";
+import Router1 from "./Router1";
 
 const App = () => {
   return (
     <div>
-      <UserDetailsFetcher/>
+      <Router1/>
     </div>
   );
 };
